@@ -1,0 +1,75 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function SimpleInterest(){
+            var a = document.getElementById("principle").value;
+            var b = document.getElementById("time").value;
+            var c = document.getElementById("rate").value;
+            var res=(a*b*c)/100;
+            document.getElementById("result").innerHTML=res;
+            /*alert(res);*/
+        }
+
+        </script>
+        <style>
+
+        </style>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td>
+                    Enter your name:
+                </td>
+                <td>
+                    <input type="text" size="75" placeholder="Your Name" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Enter Principle amount(P):
+                </td>
+                <td>
+                    <input id="principle" type="number" placeholder="Principle" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Enter period of time(T):
+                </td>
+                <td>
+                    <input id="time" type="number" placeholder="time period" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Enter rate of interest(R):
+                </td>
+                <td>
+                <input id="rate" type="number" placeholder="Rate of interest" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <input type="submit" onclick="SimpleInterest()" />
+                </td>
+                <td>
+                   <label>Result:</label>
+                </td>
+                <td>
+                <label id="result"></label>
+                </td>
+            </tr>
+        </table>
+    </body>
+    
+</html>
